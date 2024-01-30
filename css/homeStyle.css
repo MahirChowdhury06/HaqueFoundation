@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:max-content;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the last value (alpha) for the desired level of transparency */
+}
+
+.manrope {
+    font-family: 'Manrope';
+    font-style: normal;
+    line-height: normal;
+}
+
+.thin-mono {
+    font-family: 'Roboto Mono', monospace;
+}
