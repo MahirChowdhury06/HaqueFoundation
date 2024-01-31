@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="cupcake">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/homeStyle.css" />
     <title>Haque Foundation</title>
     <style type="text/tailwindcss">
-      @layer utilities {
+        @layer utilities {
         .content-auto {
           content-visibility: auto;
         }
       }
-      /* Comment  */
+      
     </style>
-  </head>
+</head>
 
-  <body class="overflow-x-hidden">
+<body class="overflow-x-hidden">
     <nav>
       <div class="navbar bg-base-300 manrope">
         <div class="navbar-start">
@@ -114,130 +111,41 @@
     </nav>
 
     <header>
-      <div class="banner bg-none">
-        <div class="carousel carousel-vertical max-h-screen w-full">
-          <!-- Item 1 -->
-          <div id="item1" class="carousel-item w-full relative">
-            <img
-              src="https://images.unsplash.com/photo-1705875999426-b2899c13a70c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="w-full h-screen"
-            />
-            <div
-              class="text-part absolute text-teal-50 mt-96 ml-28 justify-center flex flex-col items-start align-middle"
-            >
-              <h1 class="font-bold text-6xl">
-                Your <span class="text-lime-500">support</span> can help us a
-                lot
-              </h1>
-              <p class="mt-20">
-                This help is focused towards the poor and the needy who live
-                among us within <br />
-                our society and endeavors to bring about a change in their life
-                - a "MAATRAM".
-              </p>
-              <div class="button-cls">
-                <button
-                  class="btn border-none w-44 bg-lime-500 text-white hover:text-lime-900 hover:bg-yellow-100 text-lg mt-10"
-                >
-                  Donate Now
-                </button>
-                <button class="btn btn-link">Become a Volunteer?</button>
-              </div>
+        <div class="banner">
+            <div class="carousel  md:h-svh w-full">
+                <div id="item1" class="carousel-item min-h-[373px] md:min-h-[600px] relative w-full">
+                    <img src="https://images.unsplash.com/photo-1682687220566-5599dbbebf11?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="w-full" />
+                    <div class="text-section ml-2  mt-0 md:mt-44 absolute">
+                        <h1 class="font-bold w-60 md:w-72 lg:w-[573px] text-white text-5xl md:text-5xl lg:text-6xl">
+                            Your <span class="text-lime-500">support</span> can help us a lot
+                        </h1>
+                        <p class="invisible md:visible text-white text-2xl mt-2 md:mt-4">
+                            This help is focused towards the poor and the needy who live
+                            among us within <br class="hidden md:inline" />
+                            our society and endeavors to bring about a change in their life
+                            - a "MAATRAM".
+                        </p>
+                        <div class="button-cls -mt-36 md:mt-5">
+                            <button class="btn border-none bg-lime-500 text-white hover:text-lime-900 hover:bg-yellow-100 text-lg">
+                                Donate Now
+                            </button>
+                            <button class="btn btn-link ">Become a Volunteer?</button>
+                        </div>
+
+                    </div>   
+                </div>
             </div>
-          </div>
+        </div>   
 
-          <!-- Item 2 -->
-          <div id="item2" class="carousel-item w-full relative">
-            <img
-              src="https://images.unsplash.com/photo-1666718962939-0557ec54c981?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="w-full h-screen"
-            />
-            <div
-              class="text-part absolute text-teal-50 mt-96 ml-28 justify-center flex flex-col items-start align-middle"
-            >
-              <h1 class="font-bold text-6xl">
-                My <span class="text-lime-500">support</span> can help us a lot
-              </h1>
-              <p class="mt-20">
-                This help is focused towards the poor and the needy who live
-                among us within <br />
-                our society and endeavors to bring about a change in their life
-                - a "MAATRAM".
-              </p>
-              <div class="button-cls">
-                <button
-                  class="btn border-none w-44 bg-lime-500 text-white hover:text-lime-900 hover:bg-yellow-100 text-lg mt-10"
-                >
-                  Donate Now
-                </button>
-                <button class="btn btn-link">Become a Volunteer?</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 3 -->
-          <div id="item3" class="carousel-item w-full relative">
-            <img
-              src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="w-full h-screen"
-            />
-            <div
-              class="text-part absolute text-teal-50 mt-96 ml-28 justify-center flex flex-col items-start align-middle"
-            >
-              <h1 class="font-bold text-6xl">
-                My <span class="text-lime-500">support</span> can help us a lot
-              </h1>
-              <p class="mt-20">
-                This help is focused towards the poor and the needy who live
-                among us within <br />
-                our society and endeavors to bring about a change in their life
-                - a "MAATRAM".
-              </p>
-              <div class="button-cls">
-                <button
-                  class="btn border-none w-44 bg-lime-500 text-white hover:text-lime-900 hover:bg-yellow-100 text-lg mt-10"
-                >
-                  Donate Now
-                </button>
-                <button class="btn btn-link">Become a Volunteer?</button>
-              </div>
-            </div>
-          </div>
-          <!-- commit -->
-          <!-- Navigation buttons -->
-          <div
-            class="banner-text w-full flex flex-row justify-around ml-[30%] mt-96 absolute"
-          >
-            <div class="flex flex-col justify-center w-fit bg-none py-2 gap-2">
-              <a
-                href="#item1"
-                class="btn btn-xs rounded-full w-6 h-6 hover:bg-lime-500"
-              ></a>
-              <a
-                href="#item2"
-                class="btn btn-xs rounded-full w-6 h-6 hover:bg-lime-500"
-              ></a>
-              <a
-                href="#item3"
-                class="btn btn-xs rounded-full w-6 h-6 hover:bg-lime-500"
-              ></a>
-            </div>
-          </div>
-          
-          <!-- Item 4 -->
-          <section class="typeofwork">
-            <nav>
-
-            </nav>
-
-
-          </section>
-
-
-
-
-        </div>
-      </div>
     </header>
-  </body>
+
+    <main>
+        
+    </main>
+
+
+
+</body>
+
 </html>
