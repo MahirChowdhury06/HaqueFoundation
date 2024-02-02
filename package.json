@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build:css": "postcss styles.css -o output.css"
+  },
+  
   "devDependencies": {
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.33",
@@ -7,4 +11,5 @@
   "dependencies": {
     "masonry-layout": "^4.2.2"
   }
+
 }

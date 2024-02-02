@@ -13,7 +13,7 @@ body {
       0,
       0,
       0.5);
-  /* Adjust the last value (alpha) for the desired level of transparency */
+
 }
 
 .HF-logo {
@@ -111,7 +111,6 @@ body {
 }
 .our-work-section h1 em {
   font-style:normal;
-  
   font-weight: 600;
 }
 
