@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body {
   margin: 0;
   padding: 0;
@@ -13,12 +9,11 @@ body {
   left: 0;
   width: 100%;
   height: max-content;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Adjust the last value (alpha) for the desired level of transparency */
+  background: rgba(0,
+      0,
+      0,
+      0.5);
+
 }
 
 .HF-logo {
@@ -36,6 +31,7 @@ body {
 .thin-mono {
   font-family: "Roboto Mono", monospace;
 }
+
 /*
 .image {
   width: 100;
@@ -62,26 +58,7 @@ body {
   display: flex;
 }
 
-img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  color: #fff;
-  padding: 2rem;
-}
 
 .box {
   width: 100%;
@@ -112,5 +89,68 @@ img {
 }
 
 /*For PC*/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {}
+
+.our-work-section h1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
+ 
+.our-work-section h1 span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+.our-work-section h1 em {
+  font-style:normal;
+  font-weight: 600;
+}
+
+.our-work-section h1 {
+  text-transform: capitalize;
+}
+.our-work-section h1:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 2px;
+  content: "";
+  background-color: #48c500;
+}
+
+.our-work-section h1 span {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 3em;
+  padding-left: 0.25em;
+  color: rgba(0, 0, 0, 0.4);
+  padding-bottom: 10px;
+}
+
+
+.grid {
+  margin: 0 auto;
+}
+
+.grid-sizer{
+  width: 33.33%;
+}
+.grid-item{
+  width:33.33%;
+}
+.grid-item>img{
+  width: 100%;
+}
+
+
