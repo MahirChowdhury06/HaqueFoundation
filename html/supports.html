@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlZr+Kxyfi8nq/D5mlndz9m6IHDaJj8W7CJoH3n18DiiS" crossorigin="anonymous">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <link rel="stylesheet" href="../css/homeStyle.css" />
+  <link rel="stylesheet" href="../css/supportStyle.css" />
+  <title>Haque Foundation</title>
+</head>
+
+<body>
+  <nav>
+    <div class="navbar bg-none manrope">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-xs font-mono shadow bg-base-100 rounded-box w-60">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Projects</a></li>
+            <li><a>Support Us</a></li>
+            <li><a>Future Plan</a></li>
+          </ul>
+        </div>
+        <img src="../resource/HFlogo.png" alt="Haque Foundation logo" class="HF-logo" />
+        <a class="text-2xl lg:btn btn-ghost text-white lg:text-4xl">Haque Foundation</a>
+        <span class="text-xl lg:ml-0 text-[#FF4240] lg:text-2xl"></span><span
+          class="text-xl lg:ml-0 lg:text-3xl"></span></a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-l font-sans">
+          <li><a class="text-[#FF4240] font-extrabold">Home</a></li>
+          <li><a class="text-[#040201] font-semibold">About Us</a></li>
+          <li><a class="text-[#040201] font-semibold">Projects</a></li>
+          <li><a class="text-[#040201] font-semibold">Support Us</a></li>
+          <li><a class="text-[#040201] font-semibold">Future Plan</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <button class="invisible lg:visible btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_5_6)">
+              <path
+                d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z"
+                stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 21L15 15" stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_5_6">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <a class="btn btn-primary[#F4240] rounded-lg bg-[#f91c18] text-white hover:bg-white hover:text-[#481b1a]">Get
+          Ticket</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex bg-white h-[720px] mt-0 md:mt-[25%] flex-col align-middle">
+    <h1 class="text-center text-4xl font-bold mt-5 meriweather">Support</h1>
+    <p class="text-center text-gray-500 mt-5 text-lg">We are a sign of hope to those whose lives have been shattered
+      by war. Please support us today.</p>
+
+      <div class="flex flex-col lg:flex-row gap-2 md:gap-10 m-0 md:m-10 items-center justify-center">
+        <!-- Card 1: Donate -->
+        <div class="card max-w-96 max-h-96 bg-green-50 drop-shadow-2xl text-primary-content transition-transform duration-300 ease-in-out transform hover:scale-105">
+            <div class="card-body">
+                <h2 class="card-title text-xl text-green-900 font-semibold mb-4">Donate</h2>
+                <p class="text-sm md:text-base">Your contribution makes a difference. Support our mission by making a donation today.</p>
+                <div class="card-actions justify-end">
+                    <a href="#donate" class="btn btn-green hover:bg-green-950 bg-green-600 text-white rounded-lg w-36">Donate</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 2: Volunteer -->
+        <div class="card max-w-96 max-h-96 bg-blue-50 drop-shadow-2xl  text-primary-content transition-transform duration-300 ease-in-out transform hover:scale-105">
+            <div class="card-body">
+                <h2 class="card-title text-blue-900">Volunteer</h2>
+                <p class="text-sm md:text-base">Join us in making a positive impact. Explore volunteer opportunities and contribute your time and skills.</p>
+                <div class="card-actions justify-end">
+                    <a href="#volunteer" class="btn btn-green hover:bg-blue-700 text-white bg-blue-600 rounded-lg">Get Involved</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 3: Support Programs -->
+        <div class="card max-w-96 max-h-96 bg-white drop-shadow-2xl  text-primary-content transition-transform duration-300 ease-in-out transform hover:scale-105">
+            <div class="card-body">
+                <h2 class="card-title">Support Programs</h2>
+                <p class="text-gray-600 mb-4">Learn about our initiatives and programs. Your support helps us reach more individuals and communities.</p>
+                <div class="card-actions justify-end">
+                    <a href="#programs" class="btn btn-purple rounded-lg">Explore Programs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+
+
+    <div class="mt-15 flex-col items-center bg-white">
+      <h1 class="text-balance text-4xl mt-14 mb-5 ml-5 font-bold items-center meriweather">FAQ</h1>
+      <div class="collapse collapse-plus bg-white">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          <h3 class="text-xl text-green-700">Q: How can I donate to Haque Foundation?</h3>
+        </div>
+        <div class="collapse-content">
+          <p>Donating to Haque Foundation is easy! You can visit our website and navigate to the "Donate" section to
+            make a secure online donation. We also accept donations via check or money order sent to our mailing
+            address.</p>
+        </div>
+      </div>
+      <hr class="mt-5 mb-5  bg-gray-500">
+      <div class="collapse collapse-plus bg-white">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          <h3 class="text-xl text-green-700">Q: What types of programs does Haque Foundation offer?</h3>
+        </div>
+        <div class="collapse-content">
+          <p>Haque Foundation offers a variety of programs to support our community, including [list specific programs,
+            such as educational workshops, food assistance programs, mentorship programs, etc.].</p>
+        </div>
+      </div>
+      <hr class="mt-5 mb-5  bg-gray-500">
+      <div class="collapse collapse-plus bg-white">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          <h3 class="text-xl text-green-700">Q: How can I request assistance from Haque Foundation?</h3>
+        </div>
+        <div class="collapse-content">
+          <p>If you are in need of assistance, please visit our next section this page on our website to learn about the
+            services we offer and how to apply. You can also contact our office directly for more information.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="collapse collapse-plus bg-white">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          <h3 class="text-xl text-green-700">Q: Can I volunteer with Haque Foundation?</h3>
+        </div>
+        <div class="collapse-content">
+          <p>Absolutely! We welcome volunteers to join us in our mission. Visit our "Volunteer Opportunities" section on
+            this page to learn about current volunteer openings and how to apply.</p>
+        </div>
+      </div>
+      <hr class="mt-5 mb-5  bg-gray-500">
+      <div class="collapse collapse-plus bg-white">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          <h3 class="text-xl text-green-700">Q: What is the impact of my donation to Haque Foundation?</h3>
+        </div>
+        <div class="collapse-content">
+          <p>Your donation to Haque Foundation makes a significant impact in our community by [briefly describe the
+            impact, such as providing meals to families in need, offering educational resources to children, etc.].</p>
+        </div>
+      </div>
+      <hr class="mt-5 mb-5  bg-gray-500">
+      <div class="collapse collapse-plus bg-white">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          <h3 class="text-xl text-green-700">Q: How can I stay updated on Haque Foundation's activities and events?</h3>
+        </div>
+        <div class="collapse-content">
+          <p>To stay informed about Haque Foundation's activities and events, you can subscribe to our newsletter,
+            follow us on social media, or regularly visit our website for updates.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="collapse collapse-plus bg-white">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          <h3 class="text-xl text-green-700">Q: Is Haque Foundation a registered charity?</h3>
+        </div>
+        <div class="collapse-content">
+          <p>Yes, Haque Foundation is a registered 501(c)(3) nonprofit organization. Your donations are tax-deductible
+            to the extent allowed by law.</p>
+        </div>
+      </div>
+      <hr class="mt-5 mb-5  bg-gray-500">
+      <div class="collapse collapse-plus bg-white">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          <h3 class="text-xl text-green-700">Q: Can I sponsor a specific program or initiative of Haque Foundation?</h3>
+        </div>
+        <div class="collapse-content">
+          <p>Yes, we offer sponsorship opportunities for individuals and businesses interested in supporting specific
+            programs or initiatives of Haque Foundation. Please contact us for more information on sponsorship
+            opportunities.</p>
+        </div>
+      </div>
+
+      <hr>
+
+
+
+
+
+
+
+
+      <div class="get-in-touch mt-10">
+        <h1 class="text-3xl text-center">Get In Touch</h1>
+        <p class="text-center mt-5 mb-10 text-gray-500">Let us know your thoughts and feel free to ask questions!</p>
+        <div class="flex flex-col lg:flex-row justify-around">
+          <div class="left flex-col w-full">
+            <div class="left-one bg-blue-200 w-full flex flex-col items-center p-10 justify-center text-white">
+              <svg width="96px" height="96px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                stroke="#002eb8">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.36343 6.36195C7.24343 5.43495 7.55443 5.17495 7.92943 5.05395C8.18895 4.98595 8.46112 4.98217 8.72243 5.04295C9.06643 5.14295 9.15743 5.21895 10.2854 6.34295C11.2764 7.32995 11.3754 7.43695 11.4704 7.62995C11.6521 7.96873 11.6805 8.36894 11.5484 8.72995C11.4484 9.00495 11.3064 9.18695 10.7054 9.78995L10.3134 10.183C10.2105 10.2876 10.1863 10.4464 10.2534 10.577C11.1244 12.0628 12.36 13.3019 13.8434 14.177C14.0142 14.2684 14.2245 14.2389 14.3634 14.104L14.7404 13.733C14.9734 13.4941 15.2202 13.2691 15.4794 13.059C15.8866 12.809 16.3939 12.7867 16.8214 13C17.0304 13.1 17.0994 13.162 18.1214 14.182C19.1754 15.233 19.2054 15.266 19.3214 15.507C19.5397 15.9059 19.5374 16.3891 19.3154 16.786C19.2024 17.01 19.1334 17.091 18.5404 17.697C18.1824 18.063 17.8454 18.397 17.7914 18.446C17.3022 18.851 16.6746 19.0497 16.0414 19C14.883 18.8944 13.7617 18.5363 12.7564 17.951C10.5296 16.7711 8.63383 15.0521 7.24243 12.951C6.93937 12.5112 6.66994 12.0492 6.43643 11.569C5.81001 10.4953 5.48653 9.27189 5.50043 8.02895C5.54825 7.37871 5.86008 6.77637 6.36343 6.36195Z"
+                    stroke="#001ca8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </svg>
+              <h1 class="text-center text-blue-950 text-2xl">Phone : <span class="font-sans">205310210</span></h1>
+            </div>
+
+            <div class="left-two bg-yellow-50 w-full flex flex-col items-center p-10 justify-center text-green-950">
+              <svg width="96px" height="96px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M21 8L17.4392 9.97822C15.454 11.0811 14.4614 11.6326 13.4102 11.8488C12.4798 12.0401 11.5202 12.0401 10.5898 11.8488C9.53864 11.6326 8.54603 11.0811 6.5608 9.97822L3 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </svg>
+              <h1 class="text-center text-lg">Email : <span class="font-sans">hqfoundation@gmail.com</span>
+              </h1>
+            </div>
+
+            <div class="left-three bg-green-50 w-full flex flex-col items-center p-10 justify-center text-green-950">
+              <svg width="95px" height="95px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                  stroke-width="0.144"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                    stroke="#14a800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path
+                    d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                    stroke="#14a800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </svg>
+              <h1 class="text-center text-lg">Location : <span class="font-sans">Mymensingh, Dhaka, Bangladesh</span>
+              </h1>
+            </div>
+
+          </div>
+
+
+
+          <div class="right text-green-950 bg-blue-50 w-full">
+            <fieldset class="ml-10 mt-5">
+              <legend class="text-lg font-semibold mb-2">Your Name</legend>
+              <input type="text" placeholder="Ex. Jack Reacher"
+                class="input input-bordered input-success bg-white lg:min-w-full max-w-xs rounded-sm" />
+            </fieldset>
+            <fieldset class="ml-10 mt-5">
+              <legend class="text-lg font-semibold mb-2">Your email</legend>
+              <input type="text" placeholder="Ex. JR@abc.com"
+                class="input input-bordered input-success bg-white lg:min-w-full max-w-xs rounded-sm" />
+            </fieldset>
+            <fieldset class="ml-10 mt-5">
+              <legend class="text-lg font-semibold mb-2">Your Messege</legend>
+              <textarea class="textarea lg:min-w-full lg:min-h-56 input input-bordered bg-white input-success  max-w-xs rounded-sm" placeholder="Ex. Hello,I would like to know.."></textarea>
+            </fieldset>
+            <button
+              class="btn btn-wide ml-10 mt-5 bg-blue-700 hover:bg-blue-600 rounded-sm text-white text-xl ">Send</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="font-sans bg-white p-4">
+
+        <h1 class="text-balance text-4xl mt-14 mb-5  font-bold items-center meriweather">Volunteer Opportunities</h1>
+        <div class="collapse collapse-arrow bg-white">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            <h3 class="text-xl text-green-700">Why Volunteer with Haque Foundation?</h3>
+          </div>
+          <div class="collapse-content">
+            <p class="mb-4">At Haque Foundation, we believe in the power of community and volunteerism to create
+              positive
+              change. Join us in making a difference and contribute to our mission of [briefly state your mission].
+              Volunteering with us offers a rewarding experience to connect with others, build new skills, and make a
+              meaningful impact.</p>
+
+          </div>
+        </div>
+        <hr>
+        <div class="collapse collapse-arrow bg-white">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            <h3 class="text-xl text-green-700">Current Volunteer Opportunities</h3>
+          </div>
+          <div class="collapse-content">
+            <ul class="list-disc pl-6">
+              <li class="mb-2"><strong>Event Coordination:</strong> Help organize and execute fundraising events,
+                workshops, or community outreach programs.</li>
+              <li class="mb-2"><strong>Administrative Support:</strong> Assist with office tasks, data entry, and other
+                administrative duties to ensure smooth operations.</li>
+              <li class="mb-2"><strong>Mentorship Programs:</strong> Become a mentor for individuals seeking guidance
+                and
+                support in [specific area, e.g., career development, education].</li>
+              <li class="mb-2"><strong>Community Outreach:</strong> Engage with the community by distributing
+                information,
+                participating in awareness campaigns, and fostering connections.</li>
+              <li class="mb-2"><strong>Social Media Management:</strong> Contribute to our online presence by managing
+                social media accounts, creating content, and engaging with our audience.</li>
+              <li class="mb-2"><strong>Fundraising Team:</strong> Join our fundraising team to help plan and execute
+                campaigns, connect with donors, and explore creative fundraising ideas.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="collapse collapse-arrow bg-white">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            <h3 class="text-xl text-green-700">How to Apply</h3>
+          </div>
+          <div class="collapse-content">
+            <ol class="list-decimal pl-6">
+              <li class="mb-2"><strong>Visit Our Volunteer Page:</strong> Navigate to our dedicated <a href="#"
+                  class="underline text-cyan-700">volunteer</a> page on our
+                website.</li>
+              <li class="mb-2"><strong>Explore Opportunities:</strong> Browse through the available volunteer positions
+                to
+                find the one that aligns with your interests and skills.</li>
+              <li class="mb-2"><strong>Complete the Volunteer Application Form:</strong> Fill out our online application
+                form with your contact information, availability, and any relevant experience.</li>
+              <li class="mb-2"><strong>Attend an Orientation:</strong> Once your application is received, attend a
+                volunteer orientation session to learn more about our organization and your role.</li>
+              <li class="mb-2"><strong>Start Making a Difference:</strong> Begin your volunteer journey and make a
+                positive impact in the lives of those we serve.</li>
+            </ol>
+          </div>
+        </div>
+        <hr>
+        <div class="collapse collapse-arrow bg-white">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            <h3 class="text-xl text-green-700">Benefits of Volunteering</h3>
+          </div>
+          <div class="collapse-content">
+            <ul class="list-disc pl-6">
+              <li class="mb-2">Gain valuable experience and skills.</li>
+              <li class="mb-2">Build a sense of community and connection.</li>
+              <li class="mb-2">Make a meaningful contribution to a cause you care about.</li>
+              <li class="mb-2">Receive recognition and appreciation for your efforts.</li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+
+      <footer class="footer footer-center  p-10 bg-green-50 text-base-content rounded">
+        <nav class="grid grid-flow-col gap-4">
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Donations</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <div class="grid grid-flow-col gap-4">
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                </path>
+              </svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                </path>
+              </svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                </path>
+              </svg></a>
+          </div>
+        </nav>
+        <aside>
+          <p>Copyright © 2028 - All right reserved by Haque Foundation Org</p>
+        </aside>
+      </footer>
+  </main>
+
+
+</body>
+
+</html>
