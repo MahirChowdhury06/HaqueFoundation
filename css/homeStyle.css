@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  
 }
 
 .image-overlay {
@@ -44,7 +43,6 @@ body {
   background-color: #a3b449; /* Change background color on hover */
 }
 
-
 /*
 ----------------------- 2nd page start-----------
 */
@@ -54,10 +52,9 @@ body {
 @media (max-width: 768px) {
   .right-section {
     width: 100%;
-   
   }
 
-  .card {
+  .indexcard {
     align-items: center;
     width: auto;
     height: auto; /* Adjusting height to be auto for mobile screens */
@@ -71,179 +68,178 @@ body {
   }
   .learn-more-button {
     display: none; /* Hide the button for screens with a width of 768 pixels or less */
-}
+  }
 }
 
 /*2nd page pc*/
-  @media only screen and (min-width: 1000px) {
-    .left-section {
-      margin: 0;
-      padding: 0;
-      font-family: "Arial", sans-serif;
-      background: url("");
-       
-      background-size: cover;
-      height: 100vh;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .left-section {
-      padding: 20px;
-      /* background-color: rgba(41, 10, 10, 0.8); */
-      max-width: 100%;
-      box-sizing: border-box;
-    }
-    
-    .left-section h2 {
-      font-size: 28px;
-      font-weight: bold;
-      color: #60d394;
-    }
-    
-    
-    /*Card*/
-    .right-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      width: 50%;
-      box-sizing: border-box;
-    }
-    
-    .card {
-      background-color: #55a630;
-        margin: 10px;
-        padding: 15px;
-        text-align: center;
-        width: 200px; /* Set your desired width */
-        height: 250px; /* Set your desired height or remove this line for auto height */
-        box-sizing: border-box;
-        position: relative;
-    }
-    
-    .card img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-    }
-    
-    .card h3 {
-      margin: 0;
-      font-size: 18px;
-      font-weight: bold;
-      color: #333;
-    }
-    
-    .learn-more-button {
-      font-size: medium;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      display: inline-block;
-      cursor: pointer;
-  }
-/*-----------------------2nd page end--------------------- */
-
-#item4 {
-  position: relative;
-  display: flex;
-}
-
-
-.box {
-  width: 100%;
-  padding: 1rem;
-  margin: 0.5rem 0;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #fff;
-}
-
-.button-cls {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
-}
-
-.btn {
-  cursor: pointer;
-}
-
-.typeofwork {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(html\whitebg.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-/*For PC*/
 @media only screen and (min-width: 1000px) {
-}
+  .left-section {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background: url("");
 
-.our-work-section h1 {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  font-size: 40px;
-  color: #080808;
-  -webkit-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.our-work-section h1 span {
-  display: block;
-  font-size: 0.5em;
-  line-height: 1.3;
-}
-.our-work-section h1 em {
-  font-style: normal;
-  font-weight: 600;
-}
+  .left-section {
+    padding: 20px;
+    /* background-color: rgba(41, 10, 10, 0.8); */
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 
-.our-work-section h1 {
-  text-transform: capitalize;
-}
-.our-work-section h1:before {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 60px;
-  height: 2px;
-  content: "";
-  background-color: #48c500;
-}
+  .left-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #60d394;
+  }
 
-.our-work-section h1 span {
-  font-size: 13px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  line-height: 3em;
-  padding-left: 0.25em;
-  color: rgba(0, 0, 0, 0.4);
-  padding-bottom: 10px;
-}
-.grid {
-  margin: 0 auto;
-}
+  /*Card*/
+  .right-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+    box-sizing: border-box;
+  }
 
-.grid-sizer {
-  width: 33.33%;
-}
-.grid-item {
-  width: 33.33%;
-}
-.grid-item > img {
-  width: 100%;
+  .indexcard {
+    background-color: #55a630;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px; /* Set your desired width */
+    height: 250px; /* Set your desired height or remove this line for auto height */
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .indexcard img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .indexcard h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .learn-more-button {
+    font-size: medium;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  /*-----------------------2nd page end--------------------- */
+
+  #item4 {
+    position: relative;
+    display: flex;
+  }
+
+  .box {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+  }
+
+  .button-cls {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .btn {
+    cursor: pointer;
+  }
+
+  .typeofwork {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+      url(html\whitebg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  /*For PC*/
+  @media only screen and (min-width: 1000px) {
+  }
+
+  .our-work-section h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+
+  .our-work-section h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+  }
+  .our-work-section h1 em {
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .our-work-section h1 {
+    text-transform: capitalize;
+  }
+  .our-work-section h1:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 2px;
+    content: "";
+    background-color: #48c500;
+  }
+
+  .our-work-section h1 span {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 3em;
+    padding-left: 0.25em;
+    color: rgba(0, 0, 0, 0.4);
+    padding-bottom: 10px;
+  }
+  .grid {
+    margin: 0 auto;
+  }
+
+  .grid-sizer {
+    width: 33.33%;
+  }
+  .grid-item {
+    width: 33.33%;
+  }
+  .grid-item > img {
+    width: 100%;
+  }
 }
