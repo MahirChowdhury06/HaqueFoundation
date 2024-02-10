@@ -1,234 +1,359 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="emerald">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="../css/homeStyle.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  <link rel="stylesheet" href="../css/homeStyle.css" />
-  <title>Haque Foundation</title>
-
-</head>
-
-<body class="overflow-x-hidden">
-  <!-- edeec9 -->
-  <nav style="background-color: #3ab795;">
-    <div class="navbar manrope">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+  <body class="overflow-x-hidden" x-data="{ open: false }">
+    <nav
+      class="bg-white fixed w-full z-20 top-0 start-0 border-green-200 dark:bg-green-950"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="../html/index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img
+            src="../resource/HFlogo-nobg.png"
+            class="h-14 w-14"
+            alt="hf Logo"
+          />
+          <span
+            class="self-center text-base md:text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >Haque Foundation</span
+          >
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            type="button"
+            class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-lg px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            Join us
+          </button>
+          <button
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-green-500 rounded-lg md:hidden hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-200 dark:text-green-400 dark:hover:bg-green-700 dark:focus:ring-green-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
             </svg>
-          </div>
-          <ul tabindex="0"
-            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-xs font-mono shadow bg-base-100 rounded-box w-60">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="projects.html">Support Us</a></li>
-            <li><a>Future Plan</a></li>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-cta"
+        >
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="../html/index.html"
+                class="block py-2 px-3 md:p-0 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:dark:text-green-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="../html/projects.html"
+                class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="../html/supports.html"
+                class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700"
+                >Support</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
-        <img src="../resource/HFlogo.png" alt="Haque Foundation logo" class="HF-logo" />
-        <a href="index.html" class="text-2xl lg:btn btn-ghost lg:text-4xl">Haque Foundation</a>
-        <span class="text-xl lg:ml-0 text-[#55a630] lg:text-2xl"></span><span
-          class="text-xl lg:ml-0 lg:text-3xl"></span></a>
       </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1 text-l font-sans">
-          <li><a class="button-like">Home</a></li>
-          <li><a href="projects.html" class="text-[#edead0] font-semibold">Projects</a></li>
-          <li><a href="" class="text-[#edead0] font-semibold">About Us</a></li>
-          <li><a href="supports.html" class="text-[#edead0] font-semibold">Support Us</a></li>
-          <li><a class="text-[#edead0] font-semibold">Future Plan</a></li>
-        </ul>
+    </nav>
+
+    <div class="pimg2 relative">
+      <div class="overlay"></div>
+      <div class="ptext2">
+        <div class="our-work-section flex-col text-center">
+          <h1 class="text-white text-3xl md:text-6xl font-bold brightness-100">
+            Your <span class="text-green-600">support</span> can help us alot
+            <br />
+            <span class="text-base font-light"
+              >মানব আধিকার রক্ষাই, আমাদের মূল লক্ষ</span
+            >
+          </h1>
+          <button
+            type="button"
+            class="focus:outline-none text-white bg-green-700 hover:bg-green-800 mt-5 focus:ring-4 text-xl focus:ring-green-300 font-medium rounded-lg px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            Donate Now
+          </button>
+        </div>
       </div>
-      <div class="navbar-end">
-        <!-- <button class="invisible lg:visible btn btn-ghost btn-circle">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <g clip-path="url(#clip0_5_6)">
+    </div>
+
+    <div class="second-page">
+      <div class="left-section">
+        <h2 style="font-family: Tahoma">
+          <span
+            style="
+              font-family: Tahoma;
+              font-size: 28px;
+              padding-right: 0%;
+              color: #3ab795;
+              font-weight: bolder;
+            "
+            >Our Impactful Initiatives</span
+          >
+          <br class="hidden md:inline" />Across Diverse Categories.<br
+            class="hidden md:inline"
+          />
+          <a href="#" class="learn-more-button">Learn More</a>
+        </h2>
+        <br />
+
+        <div class="right-section">
+          <div class="indexcard">
+            <img
+              src="https://cdn-icons-png.flaticon.com/256/4681/4681580.png"
+              alt="Education Logo"
+            />
+            <h3>Education</h3>
+          </div>
+          <div class="indexcard">
+            <img
+              src="https://cdn-icons-png.flaticon.com/256/4359/4359828.png"
+              alt="Food Logo"
+            />
+            <h3>Food</h3>
+          </div>
+          <div class="indexcard">
+            <img
+              src="https://cdn-icons-png.flaticon.com/256/12114/12114264.png"
+              alt="Clothing Logo"
+            />
+            <h3>Clothing</h3>
+          </div>
+          <div class="indexcard">
+            <img
+              src="https://cdn-icons-png.flaticon.com/256/10134/10134769.png"
+              alt="Help Disabled Logo"
+            />
+            <h3>Help Disabled</h3>
+          </div>
+          <div class="indexcard">
+            <img
+              src="https://cdn-icons-png.flaticon.com/256/6857/6857508.png"
+              alt="Social Awareness Logo"
+            />
+            <h3>Social Awareness</h3>
+          </div>
+          <div class="indexcard">
+            <img
+              src="https://cdn-icons-png.flaticon.com/256/8777/8777928.png"
+              alt="Arrange Events Logo"
+            />
+            <h3>Arrange Events</h3>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pimg1 relative">
+      <div class="overlay"></div>
+      <div class="ptext">
+        <div class="our-work-section flex-col text-center">
+          <h1 class="text-white text-3xl font-bold mt-14 brightness-100">
+            Recent Projects <br />
+            <span class="text-base font-light"
+              >Inspiring Change, Impacting Lives</span
+            >
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <hr />
+
+      <div class="grid mt-4 gap-y-2">
+        <div class="grid-item">
+          <a href="../html/projects.html">
+            <img
+              src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/367729412_256842950547402_9129881391965414286_n.jpg?_nc_cat=110&cb=99be929b-8d691acd&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=jCxAjdWfryEAX8DuOS-&_nc_ht=scontent.fdac14-1.fna&oh=00_AfA_J-l614Aw3f81qR-k8_r_MJuoTTBHJCEEG8xnVMldNw&oe=65CAF9B3"
+            />
+            <h1></h1>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="../html/projects.html">
+            <img
+              src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/367729412_256842950547402_9129881391965414286_n.jpg?_nc_cat=110&cb=99be929b-8d691acd&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=jCxAjdWfryEAX8DuOS-&_nc_ht=scontent.fdac14-1.fna&oh=00_AfA_J-l614Aw3f81qR-k8_r_MJuoTTBHJCEEG8xnVMldNw&oe=65CAF9B3"
+            />
+            <h1></h1>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="../html/projects.html">
+            <img
+              src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/367729412_256842950547402_9129881391965414286_n.jpg?_nc_cat=110&cb=99be929b-8d691acd&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=jCxAjdWfryEAX8DuOS-&_nc_ht=scontent.fdac14-1.fna&oh=00_AfA_J-l614Aw3f81qR-k8_r_MJuoTTBHJCEEG8xnVMldNw&oe=65CAF9B3"
+            />
+            <h1></h1>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="../html/projects.html">
+            <img
+              src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/367729412_256842950547402_9129881391965414286_n.jpg?_nc_cat=110&cb=99be929b-8d691acd&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=jCxAjdWfryEAX8DuOS-&_nc_ht=scontent.fdac14-1.fna&oh=00_AfA_J-l614Aw3f81qR-k8_r_MJuoTTBHJCEEG8xnVMldNw&oe=65CAF9B3"
+            />
+            <h1></h1>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex justify-center mt-7">
+        <hr class="h-8 border-zinc-950" />
+        <button
+          class="btn btn-primary text-center justify-center bg-green-50 rounded-sm text-xl text-lime-950"
+        >
+          Read more
+        </button>
+      </div>
+
+      <hr class="mt-5 mb-5" />
+      <div class="text-center mb-10 mt-10">
+        <div
+          class="stats stats-vertical px-10 min-h-64 lg:stats-horizontal shadow"
+        >
+          <div class="stat min-w-64 min-h-36">
+            <div class="stat-title">Projects</div>
+            <div class="stat-value">31K</div>
+            <div class="stat-desc text-lg">Jan 1st - Feb 1st</div>
+          </div>
+
+          <div class="stat min-w-64 min-h-36">
+            <div class="stat-title">Volunteers</div>
+            <div class="stat-value">4,200</div>
+            <div class="stat-desc text-lg">↗︎ 400 (22%)</div>
+          </div>
+
+          <div class="stat min-w-64 min-h-36">
+            <div class="stat-title">New Registers</div>
+            <div class="stat-value">1,200</div>
+            <div class="stat-desc text-lg">↘︎ 90 (14%)</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="footer footer-center mt-10 p-10 bg-base-200 text-base-content rounded"
+    >
+      <nav class="grid grid-flow-col gap-4">
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Donations</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
               <path
-                d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z"
-                stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M21 21L15 15" stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </g>
-            <defs>
-              <clipPath id="clip0_5_6">
-                <rect width="24" height="24" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </button> -->
-        <a class="btn btn-primary[#F4240] rounded-lg bg-[#aef78e] text-[#000000] hover:bg-white hover:text-[#481b1a]">Join
-          Us</a>
-        <!-- 08bdbd -->
-      </div>
-    </div>
-  </nav>
-
-
-
-  <div class="second-page">
-
-    <div class="left-section">
-      <h2 style="font-family: Tahoma ;"><span
-          style="font-family: Tahoma; font-size: 28px; padding-right: 0%; color:#3ab795; font-weight: bolder;">Our
-          Impactful Initiatives</span> <br class="hidden md:inline" />Across Diverse Categories.<br
-          class="hidden md:inline" /> <a href="#" class="learn-more-button">Learn More</a></h2>
-      <br>
-
-      <div class="right-section">
-
-        <div class="indexcard">
-          <img src="https://cdn-icons-png.flaticon.com/256/4681/4681580.png" alt="Education Logo">
-          <h3>Education</h3>
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path></svg
+          ></a>
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path></svg
+          ></a>
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path></svg
+          ></a>
         </div>
-        <div class="indexcard">
-          <img src="https://cdn-icons-png.flaticon.com/256/4359/4359828.png" alt="Food Logo">
-          <h3>Food</h3>
-        </div>
-        <div class="indexcard">
-          <img src="https://cdn-icons-png.flaticon.com/256/12114/12114264.png" alt="Clothing Logo">
-          <h3>Clothing</h3>
-        </div>
-        <div class="indexcard">
-          <img src="https://cdn-icons-png.flaticon.com/256/10134/10134769.png" alt="Help Disabled Logo">
-          <h3>Help Disabled</h3>
-        </div>
-        <div class="indexcard">
-          <img src="https://cdn-icons-png.flaticon.com/256/6857/6857508.png" alt="Social Awareness Logo">
-          <h3>Social Awareness</h3>
-        </div>
-        <div class="indexcard">
-          <img src="https://cdn-icons-png.flaticon.com/256/8777/8777928.png" alt="Arrange Events Logo">
-          <h3>Arrange Events</h3><br>
-        </div>
-      </div>
-    </div>
-  </div>
+      </nav>
+      <aside>
+        <p>Copyright © 2028 - All right reserved by Haque Foundation Org</p>
+      </aside>
+    </footer>
 
-  </div>
-
-
-  <main>
-    <hr>
-    <div class="our-work-section">
-      <h1>Recent Projects
-        <span>Inspiring Change, Impacting Lives</span>
-      </h1>
-    </div>
-    <div class="grid mt-4">
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
-        <h1></h1>
-      </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
-      </div>
-      <div class="grid-item min-h-40 bg-lime-500 text-white text-center text-2xl ">
-        <h1>Help the poors</h1>
-      </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
-      </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
-      </div>
-      <div class="grid-item min-h-40 bg-red-500 text-white text-center text-2xl ">
-        <h1>Help the poors</h1>
-      </div>
-      <div class="grid-item">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
-      </div>
-    </div>
-
-    <div class="flex justify-center mt-7">
-      <hr class="h-8 border-zinc-950">
-      <button class="btn btn-primary text-center justify-center bg-green-50 rounded-sm text-xl text-lime-950">Read
-        more</button>
-
-    </div>
-
-    <hr class="mt-5 mb-5">
-    <div class="text-center mb-10 mt-10 ">
-      <div class="stats stats-vertical px-10 min-h-64 lg:stats-horizontal shadow">
-
-        <div class="stat min-w-64 min-h-36">
-          <div class="stat-title">Projects</div>
-          <div class="stat-value">31K</div>
-          <div class="stat-desc text-lg">Jan 1st - Feb 1st</div>
-        </div>
-
-        <div class="stat min-w-64 min-h-36">
-          <div class="stat-title">Volunteers</div>
-          <div class="stat-value">4,200</div>
-          <div class="stat-desc text-lg ">↗︎ 400 (22%)</div>
-        </div>
-
-        <div class="stat min-w-64 min-h-36">
-          <div class="stat-title">New Registers</div>
-          <div class="stat-value">1,200</div>
-          <div class="stat-desc text-lg">↘︎ 90 (14%)</div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </main>
-
-  <footer class="footer footer-center mt-10 p-10 bg-base-200 text-base-content rounded">
-    <nav class="grid grid-flow-col gap-4">
-      <a class="link link-hover">About us</a>
-      <a class="link link-hover">Contact</a>
-      <a class="link link-hover">Donations</a>
-      <a class="link link-hover">Press kit</a>
-    </nav>
-    <nav>
-      <div class="grid grid-flow-col gap-4">
-        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-            <path
-              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
-            </path>
-          </svg></a>
-        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-            <path
-              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
-            </path>
-          </svg></a>
-        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
-            <path
-              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
-            </path>
-          </svg></a>
-      </div>
-    </nav>
-    <aside>
-      <p>Copyright © 2028 - All right reserved by Haque Foundation Org</p>
-    </aside>
-  </footer>
-
-
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  <script src="../js/messonary.js"></script>
-
-</body>
-
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="../js/messonary.js"></script>
+  </body>
 </html>
