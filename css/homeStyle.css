@@ -89,34 +89,9 @@ body {
 .button-like:hover {
   background-color: #a3b449;
 }
-
-/* Additional styles for mobile screens */
-@media (max-width: 768px) {
-  .right-section {
-    width: 100%;
-  }
-
-  .indexcard {
-    align-items: center;
-    width: auto;
-    height: auto;
-    position: relative;
-    top: 10px;
-  }
-
-  .left-section h2 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-  }
-
-  .learn-more-button {
-    display: none;
-  }
-}
-
-/* Styles for screens larger than 1000px */
-@media only screen and (min-width: 1000px) {
+/* 2nd page Start */
+/* Left Section */
+@media only screen and (min-width: 1024px) {
   .left-section {
     margin: 0;
     padding: 0;
@@ -140,40 +115,13 @@ body {
     font-weight: bold;
     color: #60d394;
   }
-
-  /* Card styles */
-  .right-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 50%;
-    box-sizing: border-box;
+  .initiatives {
+    font-family: Tahoma;
+    font-size: 28px;
+    padding-right: 0%;
+    color: #3ab795;
+    font-weight: bolder;
   }
-
-  .card {
-    background-color: #55a630;
-    margin: 10px;
-    padding: 15px;
-    text-align: center;
-    width: 200px;
-    height: 250px;
-    box-sizing: border-box;
-    position: relative;
-  }
-
-  .card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  .card h3 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-  }
-
   .learn-more-button {
     font-size: medium;
     margin-top: 10px;
@@ -186,6 +134,93 @@ body {
     display: inline-block;
     cursor: pointer;
   }
+}
+/* Right part: Card styles */
+/* This part sets the layout for the right section */
+.right-section {
+  /* Make the children stack vertically */
+  display: flex;
+  flex-direction: column;
+  /* Align children to the right side of the container */
+  align-items: flex-end;
+}
+
+/* This part sets the layout for all cards */
+.allcards {
+  /* Arrange children in a row and wrap to the next line if necessary */
+  display: flex;
+  flex-wrap: wrap;
+  /* Align children to the right side of the container */
+  justify-content: flex-end;
+}
+
+/* This part sets the style for each individual card */
+.indexcard {
+  /* Add margin around each card */
+  margin: 20px;
+  /* Center the content horizontally */
+  text-align: center;
+}
+
+/* This part sets the style for images inside the cards */
+.indexcard img {
+  /* Set a fixed width for the images */
+  width: 120px; /* You can adjust this size as needed */
+  /* Ensure the height adjusts accordingly to maintain aspect ratio */
+  height: auto;
+}
+
+/* This part applies styles for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  /* Center the body content vertically */
+  body {
+    align-items: center;
+  }
+
+  /* Center the right section vertically */
+  .right-section {
+    align-items: center;
+  }
+
+  /* Change the layout of cards to stack vertically */
+  .allcards {
+    flex-direction: column;
+    /* Center the cards horizontally */
+    align-items: center;
+  }
+
+  /* Adjust margin around each card for better spacing */
+  .indexcard {
+    margin: 10px;
+  }
+
+  /* Increase the size of images for better visibility */
+  .indexcard img {
+    width: 150px; /* You can adjust this size as needed */
+  }
+
+  /* Additional styles for specific elements */
+  .initiatives {
+    /* Set font family and size */
+    font-family: Tahoma;
+    font-size: 28px;
+    /* Adjust padding to maintain layout */
+    padding-right: 0%;
+    /* Set text color */
+    color: #3ab795;
+    /* Set font weight to bold */
+    font-weight: bolder;
+  }
+  
+  /* Hide the 'Learn More' button on small screens */
+  .learn-more-button {
+    display: none;
+  }
+}
+
+  /* ----------------------------------------- */
+
+  /* ------------------------------------- */
 
   /* Styles for the "Our Work" section */
   .typeofwork {
