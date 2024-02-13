@@ -211,42 +211,41 @@ body {
     /* Set font weight to bold */
     font-weight: bolder;
   }
-  
+
   /* Hide the 'Learn More' button on small screens */
   .learn-more-button {
     display: none;
   }
 }
 
-  /* ----------------------------------------- */
+/* ----------------------------------------- */
 
-  /* ------------------------------------- */
+/* ------------------------------------- */
 
-  /* Styles for the "Our Work" section */
-  .typeofwork {
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-      url(html\whitebg.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-  }
+/* Styles for the "Our Work" section */
+.typeofwork {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(html\whitebg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
 
-  .grid {
-    margin: 0 auto;
-  }
+.grid {
+  margin: 0 auto;
+}
 
-  .grid-item {
-    width: 33.33%;
-    filter: darken;
-    transition: transform 0.3s ease-in-out;
-  }
-  .grid-item:hover {
-    transform: scale(1.05); /* Adjust the scale factor as needed */
-    z-index: 10;
-  }
-  .grid-item > img {
-    width: 100%;
-  }
+.grid-item {
+  width: 33.33%;
+  filter: darken;
+  transition: transform 0.3s ease-in-out;
+}
+.grid-item:hover {
+  transform: scale(1.05); /* Adjust the scale factor as needed */
+  z-index: 10;
+}
+.grid-item > img {
+  width: 100%;
 }
