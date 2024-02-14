@@ -9,6 +9,98 @@ body {
   padding-right: 5%;
 }
 
+/* cover picture section Start */
+.background-image {
+  /* Set the background image */
+  background-image: url("https://www.anncrafttrust.org/wp-content/uploads/2022/08/Peer-Support-Network-1024x576.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* Set dimensions */
+  width: 100%;
+  height: 50vh; /* Half of the viewport height */
+  /* Position the element fixed at the top */
+  position: absolute;
+  top: 0;
+  /* Make sure it's behind other content */
+  z-index: -1;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .background-image {
+    height: 40vh; /* Adjust the height for smaller screens */
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  .background-image {
+    height: 30vh; /* Adjust the height for even smaller screens */
+  }
+}
+/* -------------------cover picture section end -----------------------------*/
+
+/* -------------------Our project and detailes writing start------------------ */
+.project-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* Full height of the viewport */
+}
+
+.asol-lekha {
+  font-size: xx-large; /* Adjust as needed */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 200; /* Bold font weight */
+  margin-bottom: 10px; /* Add spacing between headings */
+}
+
+.o-project-more {
+  font-size: 22px; /* Adjust as needed */
+  text-align: center; /* Center-align the text */
+}
+@media (min-width: 2560px) {
+  .project-heading {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .project-heading {
+    font-size: 24px; /* Decrease font size for smaller screens */
+    padding-top: 20px;
+  }
+}
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .project-heading {
+    font-size: 24px; /* Decrease font size for smaller screens */
+    padding-top: 110px;
+  }
+
+  .o-project-more {
+    font-size: 16px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .project-heading {
+    padding-top: 150px;
+  }
+}
+@media (min-width: 375px) {
+  .project-heading {
+    padding-top: 200px;
+  }
+}
+@media (min-width: 320px) {
+  .project-heading {
+    padding-top: 200px;
+  }
+}
+/* -------------------Our project and detailes writing end------------------ */
+
 .manrope {
   font-family: "Manrope";
   font-style: normal;
@@ -202,7 +294,7 @@ body {
 }
 
 .responsive-container-block.Container.bottomContainer {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-right: 0px;
   margin-bottom: 50px;
   margin-left: 0px;
@@ -333,8 +425,11 @@ body {
 }
 
 @media (max-width: 500px) {
+  .background-image {
+    display: none;
+  }
   .responsive-container-block.Container {
-    padding-top: 10px;
+    padding-top: 70px;
     padding-right: 0px;
     padding-bottom: 10px;
     padding-left: 0px;
@@ -375,5 +470,45 @@ body {
     padding-bottom: 0px;
     padding-left: 0px;
     width: 100%;
+  }
+}
+@media (min-width: 320px) {
+  .responsive-container-block.bigContainer {
+    padding-top: 100px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .responsive-container-block {
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+  }
+}
+@media (max-width: 2560px) {
+  .background-image {
+    /* Set the background image */
+    background-image: url("https://www.anncrafttrust.org/wp-content/uploads/2022/08/Peer-Support-Network-1024x576.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Set dimensions */
+    width: 100%;
+    height: 40vh; /* Half of the viewport height */
+    /* Position the element fixed at the top */
+    position: absolute;
+    top: 0;
+    /* Make sure it's behind other content */
+    z-index: -1;
+  }
+  .responsive-container-block {
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
   }
 }
