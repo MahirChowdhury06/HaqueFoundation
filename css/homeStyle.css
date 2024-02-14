@@ -45,122 +45,9 @@ body {
   text-align: center;
 }
 
-/* Styles for button-like elements */
-.button-like {
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 9999px;
-  font-weight: bold;
-  text-decoration: none;
-}
 
-.button-like:hover {
-  background-color: #a3b449;
-}
 
-/* Media queries for left section and right section */
-@media only screen and (min-width: 1024px) {
-  .left-section {
-    margin: 0;
-    padding: 20px;
-    font-family: "Arial", sans-serif;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
 
-  .left-section h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #60d394;
-  }
-
-  .initiatives {
-    font-family: Tahoma;
-    font-size: 28px;
-    padding-right: 0%;
-    color: #3ab795;
-    font-weight: bolder;
-  }
-
-  .learn-more-button {
-    font-size: medium;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-    cursor: pointer;
-  }
-}
-
-/* Styles for right section */
-.right-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-/* Styles for all cards */
-.allcards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-/* Styles for individual cards */
-.indexcard {
-  margin: 20px;
-  text-align: center;
-}
-
-.indexcard img {
-  width: 120px;
-  height: auto;
-}
-
-/* Media query for screens with a maximum width of 768px */
-@media (max-width: 768px) {
-  body {
-    align-items: center;
-  }
-
-  .right-section {
-    align-items: center;
-  }
-
-  .allcards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .indexcard {
-    margin: 10px;
-  }
-
-  .indexcard img {
-    width: 150px;
-  }
-
-  .initiatives {
-    font-family: Tahoma;
-    font-size: 28px;
-    padding-right: 0%;
-    color: #3ab795;
-    font-weight: bolder;
-  }
-
-  .learn-more-button {
-    display: none;
-  }
-}
 
 /* Styles for screens larger than 1000px */
 @media only screen and (min-width: 1024px) {
@@ -210,16 +97,6 @@ body {
   }
 }
 
-/* Styles for the "Our Work" section */
-.typeofwork {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url('html\whitebg.jpg');
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
 
 /* Styles for individual grid items */
 .grid-item {
@@ -277,9 +154,6 @@ body {
 
 /* Additional styles for mobile screens */
 @media (max-width: 768px) {
-  .right-section {
-    width: 100%;
-  }
 
   .card {
     align-items: center;
