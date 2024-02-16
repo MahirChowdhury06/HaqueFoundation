@@ -1,338 +1,252 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="emerald">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <link rel="stylesheet" href="../css/projectstyle.css" />
-    <title>Haque Foundation</title>
-  </head>
 
-  <body class="overflow-x-hidden">
-    <nav
-      class="bg-white fixed w-full z-20 top-0 start-0 border-green-200 dark:bg-green-950"
-    >
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <a
-          href="../html/index.html"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <img
-            src="../resource/HFlogo-nobg.png"
-            class="h-14 w-14"
-            alt="hf Logo"
-          />
-          <span
-            class="self-center text-base md:text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >Haque Foundation</span
-          >
-        </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button
-            type="button"
-            class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-lg px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-          >
-            Join us
-          </button>
-          <button
-            data-collapse-toggle="navbar-cta"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-green-500 rounded-lg md:hidden hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-200 dark:text-green-400 dark:hover:bg-green-700 dark:focus:ring-green-600"
-            aria-controls="navbar-cta"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <link rel="stylesheet" href="../css/projectstyle.css" />
+  <title>Haque Foundation</title>
+</head>
+
+<body class="overflow-x-hidden">
+  <nav class="bg-white fixed w-full z-20 top-0 start-0 border-green-200 dark:bg-green-950">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="../html/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="../resource/HFlogo-nobg.png" class="h-14 w-14" alt="hf Logo" />
+        <span class="self-center text-base md:text-2xl font-semibold whitespace-nowrap dark:text-white">Haque
+          Foundation</span>
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button type="button"
+          class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-lg px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+          Join us
+        </button>
+        <button data-collapse-toggle="navbar-cta" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-green-500 rounded-lg md:hidden hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-200 dark:text-green-400 dark:hover:bg-green-700 dark:focus:ring-green-600"
+          aria-controls="navbar-cta" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+          <li>
+            <a href="../html/index.html"
+              class="block py-2 px-3 md:p-0 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:dark:text-green-500"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="../html/projects.html"
+              class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700">Projects</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700">About
+              us</a>
+          </li>
+          <li>
+            <a href="../html/supports.html"
+              class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700">Support</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="background-image"></div>
+  <main class="firstpicfix mt-0 md:mt-[20%] flex-col align-middle">
+    <div class="project-heading">
+      <div class="asol-lekha">OUR PROJECT</div>
+      <div class="o-project-more">
+        We arrange different projects every month according to people's need
+      </div>
+    </div>
+
+    <!--Start: About Us 1 -->
+    <div class="responsive-container-block bigContainer">
+      <div class="responsive-container-block Container">
+        <img class="mainImg" src="../resource/HFsol.jpg" />
+        <div class="allText aboveText">
+          <p class="text-blk headingText">Project- 1</p>
+          <p class="text-blk subHeadingText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="text-blk description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
+            pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
+            in ullamcorper quis vestibulum ligula elementum ut.
+          </p>
+          <button class="explore">Explore</button>
+        </div>
+      </div>
+      <div class="responsive-container-block Container bottomContainer">
+        <img class="mainImg"
+          src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/311707486_115848067980225_2825183459850310177_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeEnJbcrnbTcCYuhI9N8ka9xeoQ-3oBR20Z6hD7egFHbRn-7LonhrepaHksVOULVUh2tN7gfgj01OaWKwbMIbYqe&_nc_ohc=M8BjjThLjOoAX-Vy5_q&_nc_ht=scontent.fdac31-1.fna&oh=00_AfCtjNWSFzpV7hgKTUF7kJwCsn1vMUplNoPAbjaYkkV1NA&oe=65C48A1F" />
+        <div class="allText bottomText">
+          <p class="text-blk headingText">Our Vision</p>
+          <p class="text-blk subHeadingText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="text-blk description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
+            pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
+            in ullamcorper quis vestibulum ligula elementum ut.
+          </p>
+          <button class="explore">Explore</button>
+        </div>
+      </div>
+    </div>
+    <!--End: About Us 1 -->
+
+    <!--Start: About Us 2 -->
+    <div class="responsive-container-block bigContainer">
+      <div class="responsive-container-block Container">
+        <img class="mainImg"
+          src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/312293087_116218207943211_3019772507473622036_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeE1DrWaUHUhv8ecohpFWS5hUaPeesYjXB1Ro956xiNcHT4ZY6sN8qhqhEQ5N2EGJRIaIeiN2HXPRNGZm51I9MfP&_nc_ohc=ZZQfYzxkF0IAX_JoOl-&_nc_ht=scontent.fdac31-1.fna&oh=00_AfAVsDVB23W9zSBsJekFKXoIg8CNuUq8XmLgnCj9meuWlg&oe=65C36BC6" />
+        <div class="allText aboveText">
+          <p class="text-blk headingText">Our Mission</p>
+          <p class="text-blk subHeadingText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="text-blk description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
+            pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
+            in ullamcorper quis vestibulum ligula elementum ut.
+          </p>
+          <button class="explore">Explore</button>
+        </div>
+      </div>
+      <div class="responsive-container-block Container bottomContainer">
+        <img class="mainImg"
+          src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/417476931_352157747682588_8099278236978706267_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeGOReaqNRni5oJLWKzPFmY__bBRSRYP96b9sFFJFg_3ptUbv2vDXqTn1Av3t-bjrVh7aurqc836vAJiiE7xB-Fx&_nc_ohc=wfvLHlOsExMAX8yGKMR&_nc_ht=scontent.fdac31-1.fna&oh=00_AfCGZeajUXXAgJZuo_82syM8x6S-jrJu2TujjnLXJt81RQ&oe=65C4305B" />
+        <div class="allText bottomText">
+          <p class="text-blk headingText">Our Vision</p>
+          <p class="text-blk subHeadingText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="text-blk description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
+            pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
+            in ullamcorper quis vestibulum ligula elementum ut.
+          </p>
+          <button class="explore">Explore</button>
+        </div>
+      </div>
+    </div>
+    <!--End: About Us 2 -->
+    <div class="responsive-container-block bigContainer">
+      <div class="responsive-container-block Container">
+        <img class="mainImg"
+          src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/402227092_310301491868214_805904592374855306_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHtqF1kBka636XBHYXOBvw4Jqasalgqgs4mpqxqWCqCzl1Hosqeno0hejniZj-oC-9jpQCmyoIxOS0l3EE27Alw&_nc_ohc=WFFrarZKN3wAX9RLHMc&_nc_oc=AQnmghIKZehN7t2SBg3Qfofg9tEHHbgZ1OlvcbCHaxaOHhTb9-EqEuqJ0W46ZhapCyk&_nc_ht=scontent.fdac31-1.fna&oh=00_AfC9m-ELDNalM6EBP9MznW98v43S5j-_RNwVMaXBemVDow&oe=65C37310" />
+        <div class="allText aboveText">
+          <p class="text-blk headingText">Our Mission</p>
+          <p class="text-blk subHeadingText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="text-blk description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
+            pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
+            in ullamcorper quis vestibulum ligula elementum ut.
+          </p>
+          <button class="explore">Explore</button>
+        </div>
+      </div>
+      <div class="responsive-container-block Container bottomContainer">
+        <img class="mainImg"
+          src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/395451432_302919202606443_2529343197803308498_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHuK6oPEkC7HYqIFDkDOQziBDcgiLnt_QgENyCIue39CFRB7a-D-QB_yalIeuC7CQuOi71wbryJdqZjO_jdpabn&_nc_ohc=cTmi3IcmuSsAX9JQTJ7&_nc_ht=scontent.fdac31-1.fna&oh=00_AfCUCnXTGUbJ6KGgMtwkrAdvOob9XGaNmkfN2sr6pBsdVw&oe=65C44B0B" />
+        <div class="allText bottomText">
+          <p class="text-blk headingText">Our Vision</p>
+          <p class="text-blk subHeadingText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="text-blk description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
+            pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
+            in ullamcorper quis vestibulum ligula elementum ut.
+          </p>
+          <button class="explore">Explore</button>
+        </div>
+      </div>
+    </div>
+    <!--Start: About Us 3 -->
+    <div class="responsive-container-block bigContainer">
+      <div class="responsive-container-block Container">
+        <img class="mainImg"
+          src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/395444453_297604919804538_967945268614121254_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHanWDlHHlmJtdhogsZTDDFqdt6holqpomp23qGiWqmieIwKZUMwVrFUy7CvvImUVWSlJi6Vfhx5yd0T1AsMhu3&_nc_ohc=y0mMU6SgJg0AX8dwbzv&_nc_ht=scontent.fdac31-1.fna&oh=00_AfDUS1Lk6Olmd5kI1BiOMuMz-Chndy9K1QDguW-aM8xs3g&oe=65C373A1" />
+        <div class="allText aboveText">
+          <p class="text-blk headingText">Our Mission</p>
+          <p class="text-blk subHeadingText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="text-blk description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
+            pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
+            in ullamcorper quis vestibulum ligula elementum ut.
+          </p>
+          <button class="explore">Explore</button>
+        </div>
+      </div>
+      <div class="responsive-container-block Container bottomContainer">
+        <img class="mainImg"
+          src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/383989657_283325911232439_361233993259911012_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFAK8Kt_we0e2qscUz6dcejlTe_XnbJE6OVN79edskTo-rsmfkXwUpadmF0Zllt5qCJj0GpD5mTu1V5rccvTSo1&_nc_ohc=Q6m6b7ESU3oAX8a0aH9&_nc_ht=scontent.fdac31-1.fna&oh=00_AfA-ugfscUmNsGEi2AAs5_4KQQDZGm-nZS4AolQcuC9j3A&oe=65C40D99" />
+        <div class="allText bottomText">
+          <p class="text-blk headingText">Our Vision</p>
+          <p class="text-blk subHeadingText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="text-blk description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
+            pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
+            in ullamcorper quis vestibulum ligula elementum ut.
+          </p>
+          <button class="explore">Explore</button>
+        </div>
+      </div>
+    </div>
+    <!--End: About Us 3 -->
+
+    <footer class="footer footer-center mt-10 p-10 bg-base-200 text-base-content rounded">
+      <nav class="grid grid-flow-col gap-4">
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Donations</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
               <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+              </path>
+            </svg></a>
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+              </path>
+            </svg></a>
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+              </path>
+            </svg></a>
         </div>
-        <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-cta"
-        >
-          <ul
-            class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
-          >
-            <li>
-              <a
-                href="../html/index.html"
-                class="block py-2 px-3 md:p-0 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:dark:text-green-500"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="../html/projects.html"
-                class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700"
-                >About us</a
-              >
-            </li>
-            <li>
-              <a
-                href="../html/supports.html"
-                class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700"
-                >Support</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="background-image"></div>
-    <main class="firstpicfix mt-0 md:mt-[20%] flex-col align-middle">
-      <div class="project-heading">
-        <div class="asol-lekha">OUR PROJECT</div>
-        <div class="o-project-more">
-          We arrange different projects every month according to people's need
-        </div>
-      </div>
+      </nav>
+      <aside>
+        <p>Copyright © 2028 - All right reserved by Haque Foundation Org</p>
+      </aside>
+    </footer>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
 
-      <!--Start: About Us 1 -->
-      <div class="responsive-container-block bigContainer">
-        <div class="responsive-container-block Container">
-          <img class="mainImg" src="../resource/HFsol.jpg" />
-          <div class="allText aboveText">
-            <p class="text-blk headingText">Project- 1</p>
-            <p class="text-blk subHeadingText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="text-blk description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
-              pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
-              in ullamcorper quis vestibulum ligula elementum ut.
-            </p>
-            <button class="explore">Explore</button>
-          </div>
-        </div>
-        <div class="responsive-container-block Container bottomContainer">
-          <img
-            class="mainImg"
-            src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/311707486_115848067980225_2825183459850310177_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeEnJbcrnbTcCYuhI9N8ka9xeoQ-3oBR20Z6hD7egFHbRn-7LonhrepaHksVOULVUh2tN7gfgj01OaWKwbMIbYqe&_nc_ohc=M8BjjThLjOoAX-Vy5_q&_nc_ht=scontent.fdac31-1.fna&oh=00_AfCtjNWSFzpV7hgKTUF7kJwCsn1vMUplNoPAbjaYkkV1NA&oe=65C48A1F"
-          />
-          <div class="allText bottomText">
-            <p class="text-blk headingText">Our Vision</p>
-            <p class="text-blk subHeadingText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="text-blk description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
-              pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
-              in ullamcorper quis vestibulum ligula elementum ut.
-            </p>
-            <button class="explore">Explore</button>
-          </div>
-        </div>
-      </div>
-      <!--End: About Us 1 -->
-
-      <!--Start: About Us 2 -->
-      <div class="responsive-container-block bigContainer">
-        <div class="responsive-container-block Container">
-          <img
-            class="mainImg"
-            src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/312293087_116218207943211_3019772507473622036_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeE1DrWaUHUhv8ecohpFWS5hUaPeesYjXB1Ro956xiNcHT4ZY6sN8qhqhEQ5N2EGJRIaIeiN2HXPRNGZm51I9MfP&_nc_ohc=ZZQfYzxkF0IAX_JoOl-&_nc_ht=scontent.fdac31-1.fna&oh=00_AfAVsDVB23W9zSBsJekFKXoIg8CNuUq8XmLgnCj9meuWlg&oe=65C36BC6"
-          />
-          <div class="allText aboveText">
-            <p class="text-blk headingText">Our Mission</p>
-            <p class="text-blk subHeadingText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="text-blk description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
-              pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
-              in ullamcorper quis vestibulum ligula elementum ut.
-            </p>
-            <button class="explore">Explore</button>
-          </div>
-        </div>
-        <div class="responsive-container-block Container bottomContainer">
-          <img
-            class="mainImg"
-            src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/417476931_352157747682588_8099278236978706267_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeGOReaqNRni5oJLWKzPFmY__bBRSRYP96b9sFFJFg_3ptUbv2vDXqTn1Av3t-bjrVh7aurqc836vAJiiE7xB-Fx&_nc_ohc=wfvLHlOsExMAX8yGKMR&_nc_ht=scontent.fdac31-1.fna&oh=00_AfCGZeajUXXAgJZuo_82syM8x6S-jrJu2TujjnLXJt81RQ&oe=65C4305B"
-          />
-          <div class="allText bottomText">
-            <p class="text-blk headingText">Our Vision</p>
-            <p class="text-blk subHeadingText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="text-blk description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
-              pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
-              in ullamcorper quis vestibulum ligula elementum ut.
-            </p>
-            <button class="explore">Explore</button>
-          </div>
-        </div>
-      </div>
-      <!--End: About Us 2 -->
-      <div class="responsive-container-block bigContainer">
-        <div class="responsive-container-block Container">
-          <img
-            class="mainImg"
-            src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/402227092_310301491868214_805904592374855306_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHtqF1kBka636XBHYXOBvw4Jqasalgqgs4mpqxqWCqCzl1Hosqeno0hejniZj-oC-9jpQCmyoIxOS0l3EE27Alw&_nc_ohc=WFFrarZKN3wAX9RLHMc&_nc_oc=AQnmghIKZehN7t2SBg3Qfofg9tEHHbgZ1OlvcbCHaxaOHhTb9-EqEuqJ0W46ZhapCyk&_nc_ht=scontent.fdac31-1.fna&oh=00_AfC9m-ELDNalM6EBP9MznW98v43S5j-_RNwVMaXBemVDow&oe=65C37310"
-          />
-          <div class="allText aboveText">
-            <p class="text-blk headingText">Our Mission</p>
-            <p class="text-blk subHeadingText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="text-blk description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
-              pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
-              in ullamcorper quis vestibulum ligula elementum ut.
-            </p>
-            <button class="explore">Explore</button>
-          </div>
-        </div>
-        <div class="responsive-container-block Container bottomContainer">
-          <img
-            class="mainImg"
-            src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/395451432_302919202606443_2529343197803308498_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHuK6oPEkC7HYqIFDkDOQziBDcgiLnt_QgENyCIue39CFRB7a-D-QB_yalIeuC7CQuOi71wbryJdqZjO_jdpabn&_nc_ohc=cTmi3IcmuSsAX9JQTJ7&_nc_ht=scontent.fdac31-1.fna&oh=00_AfCUCnXTGUbJ6KGgMtwkrAdvOob9XGaNmkfN2sr6pBsdVw&oe=65C44B0B"
-          />
-          <div class="allText bottomText">
-            <p class="text-blk headingText">Our Vision</p>
-            <p class="text-blk subHeadingText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="text-blk description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
-              pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
-              in ullamcorper quis vestibulum ligula elementum ut.
-            </p>
-            <button class="explore">Explore</button>
-          </div>
-        </div>
-      </div>
-      <!--Start: About Us 3 -->
-      <div class="responsive-container-block bigContainer">
-        <div class="responsive-container-block Container">
-          <img
-            class="mainImg"
-            src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/395444453_297604919804538_967945268614121254_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHanWDlHHlmJtdhogsZTDDFqdt6holqpomp23qGiWqmieIwKZUMwVrFUy7CvvImUVWSlJi6Vfhx5yd0T1AsMhu3&_nc_ohc=y0mMU6SgJg0AX8dwbzv&_nc_ht=scontent.fdac31-1.fna&oh=00_AfDUS1Lk6Olmd5kI1BiOMuMz-Chndy9K1QDguW-aM8xs3g&oe=65C373A1"
-          />
-          <div class="allText aboveText">
-            <p class="text-blk headingText">Our Mission</p>
-            <p class="text-blk subHeadingText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="text-blk description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
-              pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
-              in ullamcorper quis vestibulum ligula elementum ut.
-            </p>
-            <button class="explore">Explore</button>
-          </div>
-        </div>
-        <div class="responsive-container-block Container bottomContainer">
-          <img
-            class="mainImg"
-            src="https://scontent.fdac31-1.fna.fbcdn.net/v/t39.30808-6/383989657_283325911232439_361233993259911012_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeFAK8Kt_we0e2qscUz6dcejlTe_XnbJE6OVN79edskTo-rsmfkXwUpadmF0Zllt5qCJj0GpD5mTu1V5rccvTSo1&_nc_ohc=Q6m6b7ESU3oAX8a0aH9&_nc_ht=scontent.fdac31-1.fna&oh=00_AfA-ugfscUmNsGEi2AAs5_4KQQDZGm-nZS4AolQcuC9j3A&oe=65C40D99"
-          />
-          <div class="allText bottomText">
-            <p class="text-blk headingText">Our Vision</p>
-            <p class="text-blk subHeadingText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p class="text-blk description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
-              pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
-              in ullamcorper quis vestibulum ligula elementum ut.
-            </p>
-            <button class="explore">Explore</button>
-          </div>
-        </div>
-      </div>
-      <!--End: About Us 3 -->
-
-      <footer
-        class="footer footer-center mt-10 p-10 bg-base-200 text-base-content rounded"
-      >
-        <nav class="grid grid-flow-col gap-4">
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Donations</a>
-          <a class="link link-hover">Press kit</a>
-        </nav>
-        <nav>
-          <div class="grid grid-flow-col gap-4">
-            <a
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-current"
-              >
-                <path
-                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-                ></path></svg
-            ></a>
-            <a
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-current"
-              >
-                <path
-                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
-                ></path></svg
-            ></a>
-            <a
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-current"
-              >
-                <path
-                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-                ></path></svg
-            ></a>
-          </div>
-        </nav>
-        <aside>
-          <p>Copyright © 2028 - All right reserved by Haque Foundation Org</p>
-        </aside>
-      </footer>
-    </main>
-  </body>
 </html>
