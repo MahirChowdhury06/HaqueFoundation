@@ -1,7 +1,39 @@
 body {
   margin: 0;
   padding: 0;
+  
 }
+
+.animated-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-card h1 {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animated-card p {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animated-card:hover h1 {
+  opacity: 0;
+  transform: translateX(-20px); /* Adjust as needed */
+}
+
+.animated-card:hover p {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
 
 /* Common styles for pimg1 and pimg2 */
 .pimg1,
@@ -44,9 +76,6 @@ body {
   transform: translateY(30%);
   text-align: center;
 }
-
-
-
 
 
 /* Styles for screens larger than 1000px */
