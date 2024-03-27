@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="emerald">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/volunteerStyle.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <title>Haque Foundation</title>
+</head>
+
+<body>
+
+    <nav class="bg-white fixed w-full z-20 top-0 start-0 border-green-200 dark:bg-green-950">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="../html/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="../resource/HFlogo-nobg.png" class="h-14 w-14" alt="hf Logo" />
+                <span class="self-center text-base md:text-2xl font-semibold whitespace-nowrap dark:text-white">Haque
+                    Foundation</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button"
+                    class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-lg px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                    Join us
+                </button>
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-green-500 rounded-lg md:hidden hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-200 dark:text-green-400 dark:hover:bg-green-700 dark:focus:ring-green-600"
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <li>
+                        <a href="../html/index.html"
+                            class="block py-2 px-3 md:p-0 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:dark:text-green-500"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="../html/projects.html"
+                            class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700">About
+                            us</a>
+                    </li>
+                    <li>
+                        <a href="../html/supports.html"
+                            class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700">Support</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 md:p-0 text-green-900 rounded hover:bg-green-100 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-green-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-green-700">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="bg-gray-100 text-gray-800">
+        <div class="container mx-auto py-8">
+            
+
+            <!-- Volunteer Opportunities Section -->
+
+            <div class="container mx-auto py-8">
+                <div class="accordion mt-10">
+                    <!-- Volunteer Opportunities Section -->
+                    <div class="collapse collapse-arrow bg-white">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">
+                            <h3 class="text-xl text-green-700">Current Volunteer Opportunities</h3>
+                        </div>
+                        <div class="collapse-content">
+                            <ul class="list-disc pl-6">
+                                <li class="mb-2"><strong>Event Coordination:</strong> Help organize and execute
+                                    fundraising
+                                    events,
+                                    workshops, or community outreach programs.</li>
+                                <li class="mb-2"><strong>Administrative Support:</strong> Assist with office tasks, data
+                                    entry, and other
+                                    administrative duties to ensure smooth operations.</li>
+                                <li class="mb-2"><strong>Mentorship Programs:</strong> Become a mentor for individuals
+                                    seeking guidance
+                                    and
+                                    support in [specific area, e.g., career development, education].</li>
+                                <li class="mb-2"><strong>Community Outreach:</strong> Engage with the community by
+                                    distributing
+                                    information,
+                                    participating in awareness campaigns, and fostering connections.</li>
+                                <li class="mb-2"><strong>Social Media Management:</strong> Contribute to our online
+                                    presence
+                                    by managing
+                                    social media accounts, creating content, and engaging with our audience.</li>
+                                <li class="mb-2"><strong>Fundraising Team:</strong> Join our fundraising team to help
+                                    plan
+                                    and execute
+                                    campaigns, connect with donors, and explore creative fundraising ideas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="collapse collapse-arrow mt-2 bg-white">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">
+                            <h3 class="text-xl text-green-700">Why Should You Apply</h3>
+                        </div>
+                        <div class="collapse-content">
+                            <ol class="list-decimal pl-6">
+                                <li class="mb-2"><strong>Make a Difference:</strong> By volunteering with us, you have
+                                    the
+                                    opportunity to make a positive impact in the lives of others and contribute to
+                                    meaningful projects and programs.</li>
+                                <li class="mb-2"><strong>Personal Growth:</strong> Volunteering offers a chance for
+                                    personal
+                                    growth and development, allowing you to gain new skills, experiences, and
+                                    perspectives.
+                                </li>
+                                <li class="mb-2"><strong>Community Engagement:</strong> Joining our team provides an
+                                    opportunity to connect with your community, meet new people, and build valuable
+                                    relationships.</li>
+                                <li class="mb-2"><strong>Fulfillment:</strong> There's immense satisfaction in knowing
+                                    that
+                                    your time and efforts are contributing to a cause you care about, bringing
+                                    fulfillment
+                                    and purpose to your life.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="collapse collapse-arrow mt-2 bg-white">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">
+                            <h3 class="text-xl text-green-700">Benefits of Volunteering</h3>
+                        </div>
+                        <div class="collapse-content">
+                            <ul class="list-disc pl-6">
+                                <li class="mb-2">Gain valuable experience and skills.</li>
+                                <li class="mb-2">Build a sense of community and connection.</li>
+                                <li class="mb-2">Make a meaningful contribution to a cause you care about.</li>
+                                <li class="mb-2">Receive recognition and appreciation for your efforts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Volunteer Application Form -->
+                <div class="mb-12 mt-8">
+                    <h2 class="text-xl font-semibold mb-4 text-green-900">Apply to Volunteer</h2>
+                    <form action="#" method="post" class="bg-white p-6 mt-8 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label for="name" class="block mb-2">Your Name:</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring focus:border-blue-300">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block mb-2">Your Email:</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring focus:border-blue-300">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block mb-2">Message (Optional):</label>
+                            <textarea id="message" name="message"
+                                class="w-full border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring focus:border-blue-300"></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <label for="image" class="block mb-2">Upload Your Photo:</label>
+                            <input type="file" id="image" name="image" accept="image/*"
+                                class="border-gray-300 focus:outline-none focus:ring focus:border-blue-300">
+                        </div>
+                        <button type="submit" class="btn">Submit Application</button>
+                    </form>
+                </div>
+
+                <!-- Terms and Conditions Section -->
+                <div>
+                    <h2 class="text-xl font-semibold mb-4 text-green-900">Terms and Conditions</h2>
+                    <p class="mb-4">By submitting your application, you agree to abide by the terms and conditions of
+                        volunteering with Haque Foundation. These terms and conditions will be provided upon acceptance
+                        of
+                        your
+                        application.</p>
+                    <p class="mb-4">For any inquiries or further information, please contact our Volunteer Coordinator
+                        at <a href="../html/supports.html" class="text-blue-500">support page</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
