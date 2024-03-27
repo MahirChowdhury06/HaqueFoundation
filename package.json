@@ -8,6 +8,14 @@
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
+    "express": "^4.19.2",
     "masonry-layout": "^4.2.2"
-  }
+  },
+  "name": "haquefoundation",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
